@@ -65,12 +65,13 @@ if __name__ == "__main__":
             if im_window.shape[0] != min_wdw_sz[1] or im_window.shape[1] != min_wdw_sz[0]:
                 continue
             # Calculate the HOG features
-            fd = hog(im_window, orientations, pixels_per_cell, cells_per_block, visualize, normalize)
-            pred = clf.predict(fd)
+            fd = hog(im_window,  orientations=9, pixels_per_cell=(8, 8), cells_per_block=(3, 3), block_norm='L2-Hys', visualise=False, transform_sqrt=False, feature_vector=True)
+            fd_shape = fd.reshape(1, -1)
+            pred = clf.predict(fd_shape)
             if pred == 1:
                 print  "Detection:: Location -> ({}, {})".format(x, y)
-                print "Scale ->  {} | Confidence Score {} \n".format(scale,clf.decision_function(fd))
-                detections.append((x, y, clf.decision_function(fd),
+                print "Scale ->  {} | Confidence Score {} \n".format(scale,clf.decision_function(fd_shape))
+                detections.append((x, y, clf.decision_function(fd_shape),
                     int(min_wdw_sz[0]*(downscale**scale)),
                     int(min_wdw_sz[1]*(downscale**scale))))
                 cd.append(detections[-1])

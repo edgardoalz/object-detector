@@ -6,6 +6,7 @@ from sklearn.externals import joblib
 import argparse as ap
 import glob
 import os
+import numpy as np
 from config import *
 
 if __name__ == "__main__":
