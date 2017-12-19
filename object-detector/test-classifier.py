@@ -40,9 +40,9 @@ if __name__ == "__main__":
     args = vars(parser.parse_args())
 
     # Read the image
-    im = imread(args["image"], as_grey=False)
-    min_wdw_sz = (100, 40)
-    step_size = (10, 10)
+    im = imread(args["image"], as_grey=True)
+    min_wdw_sz = min_wdw_sz
+    step_size = step_size
     downscale = args['downscale']
     visualize_det = args['visualize']
 
@@ -65,7 +65,7 @@ if __name__ == "__main__":
             if im_window.shape[0] != min_wdw_sz[1] or im_window.shape[1] != min_wdw_sz[0]:
                 continue
             # Calculate the HOG features
-            fd = hog(im_window,  orientations=9, pixels_per_cell=(8, 8), cells_per_block=(3, 3), block_norm='L2-Hys', visualise=False, transform_sqrt=False, feature_vector=True)
+            fd = hog(im_window,  orientations=orientations, pixels_per_cell=pixels_per_cell, cells_per_block=cells_per_block, block_norm=block_norm, visualise=visualise, transform_sqrt=transform_sqrt, feature_vector=feature_vector)
             fd_shape = fd.reshape(1, -1)
             pred = clf.predict(fd_shape)
             if pred == 1:
