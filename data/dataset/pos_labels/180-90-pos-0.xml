@@ -1,0 +1,26 @@
+<annotation>
+	<folder>pos</folder>
+	<filename>180-90-pos-0.jpg</filename>
+	<path>/home/edgardo/Projects/school/ia/object-detector/data/dataset/pos/180-90-pos-0.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>100</width>
+		<height>100</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>naranja_oeste</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>15</ymin>
+			<xmax>99</xmax>
+			<ymax>89</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation verified="yes">
+	<folder>pos</folder>
+	<filename>90-pos-31.jpg</filename>
+	<path>/home/edgardo/Projects/school/ia/object-detector/data/dataset/pos/90-pos-31.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>100</width>
+		<height>100</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>rojo_sur</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>15</xmin>
+			<ymin>2</ymin>
+			<xmax>89</xmax>
+			<ymax>98</ymax>
+		</bndbox>
+	</object>
+</annotation>
