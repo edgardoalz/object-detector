@@ -12,5 +12,5 @@ neg_feat_path =  "../data/features/neg"
 os.system("python ../object-detector/train-classifier.py -p {} -n {}".format(pos_feat_path, neg_feat_path))
 
 # Perform testing 
-test_im_path = "../data/dataset/test/test-0.jpg"
+test_im_path = "../data/dataset/test/test-12.jpg"
 os.system("python ../object-detector/test-classifier.py -i {} --visualize".format(test_im_path))
