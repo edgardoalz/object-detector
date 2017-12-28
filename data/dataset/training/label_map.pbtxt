@@ -1,5 +1,20 @@
 item {
     id: 1
-    name: 'carro'
+    name: 'amarillo'
+}
+
+item {
+    id: 2
+    name: 'verde'
+}
+
+item {
+    id: 3
+    name: 'rojo'
+}
+
+item {
+    id: 4
+    name: 'naranja'
 }
 
