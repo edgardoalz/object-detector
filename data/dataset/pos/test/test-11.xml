@@ -1,0 +1,26 @@
+<annotation verified="yes">
+	<folder>test</folder>
+	<filename>test-11.jpg</filename>
+	<path>/home/edgardo/Projects/school/ia/object-detector/data/dataset/pos/test/test-11.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>amarillo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>265</xmin>
+			<ymin>199</ymin>
+			<xmax>536</xmax>
+			<ymax>395</ymax>
+		</bndbox>
+	</object>
+</annotation>
